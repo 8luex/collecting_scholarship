@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2023 at 11:22 AM
+-- Generation Time: Jan 18, 2023 at 04:05 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -34,14 +34,24 @@ CREATE TABLE `activity` (
   `detail` text NOT NULL,
   `createdAt` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `location` text NOT NULL,
-  `eventDate` int(11) NOT NULL,
+  `eventDate` date NOT NULL,
   `timeStart` time NOT NULL,
   `timeEnd` time NOT NULL,
   `hoursToReceive` int(11) NOT NULL,
   `image` text NOT NULL,
   `year` varchar(50) NOT NULL,
-  `semester` int(1) NOT NULL
+  `semester` int(1) NOT NULL,
+  `max` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `activity`
+--
+
+INSERT INTO `activity` (`id`, `creator`, `name`, `detail`, `createdAt`, `location`, `eventDate`, `timeStart`, `timeEnd`, `hoursToReceive`, `image`, `year`, `semester`, `max`) VALUES
+(1, 5000199, 'Cyber Team Heroes', 'ฝึกอบรมอาสาสมัครเยาวชนคนรุ่นใหม่ ป้องกันภัยทางไซเบอร์ (Cyber Team Heroes) เพื่อเป็นการสร้างช่องทางการประชาสัมพันธ์ การเผยแพร่ข้อมูล ขยายเครือข่ายอาสาสมัคร ผ่านนักศึกษาซึ่งเป็นกลุ่มที่มีความรู้และทักษะในการใช้เทคโนโลยีที่ดี', '2023-01-15 07:06:51', 'ตึก 11 ห้อง 904', '2022-12-08', '08:30:00', '12:30:00', 3, 'https://www2.rsu.ac.th/Upload/images/mk/2019/GENED/Polic/Cyber%20Team%20Heroes%20(4).jpg', '2565', 1, 100),
+(2, 5000199, 'งานการแข่งขันรังสิตวิชาการ', 'ฝ่ายวิชาการและหน่อยงานที่เกี่ยวข้อง มหาวิทยาลัยรังสิต ได้จัดงานการแข่งขันรังสิตวิชาการ (รอบ Grand Champion) ประจำปีการศึกษา 2565 ซึ่งเป็นการแข่งขันเกี่ยวกับการเสนอแนวความคิดในการแก้ปัญหาของประเทศในรูปแบบสหวิทยาการของชั้นระดับมัธยมศึกษาปีที่ 4 - 6 ขึ้น', '2023-01-15 07:08:45', 'ตึก 17 ศาลาดนตรีสุริยเทพ มหาวิทยาลัยรังสิต ', '2023-01-20', '08:30:00', '12:30:00', 3, 'https://scontent.fbkk13-2.fna.fbcdn.net/v/t39.30808-6/323701965_2086641571544644_2128006122216910614_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEYn-uuZuxfGEKbOaX76NXnfuhXe0JfYPB-6Fd7Ql9g8KhhwugOwWYMaHpPJL8vjcjkcufjglsgN2oLLymeW_Jx&_nc_ohc=n9DSzUqyoZ0AX_POWEz&_nc_zt=23&_nc_ht=scontent.fbkk13-2.fna&oh=00_AfClD5-ROUanE0RCUrT9hDL7CPn2hRb1_850tkt3iCF8AA&oe=63C92359', '2565', 1, 10),
+(3, 5000197, 'RSU Counseling & Psychological Services', 'สำนักงานสวัสดิการสุขภาพ มหาวิทยาลัยรังสิต ขอเชิญนักศึกษามหาวิทยาลัยรังสิต รวมถึงท่านผู้สนใจทุกท่าน เข้าร่วมโครงการพัฒนาทักษะชีวิตในหัวข้อ \"เรื่องซึมเศร้า เข้าใจได้”', '2023-01-15 07:14:33', 'ห้อง Auditorium ชั้น 1 อาคารรัตนคุณากร (ตึก11)  มหาวิทยาลัยรังสิต', '2023-01-09', '13:00:00', '16:00:00', 3, 'https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/319730374_594018049394403_6540762201895720179_n.jpg?stp=dst-jpg_p640x640&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHHZZXKrGTA6qa1--9AB0dUofmDeyjpBU6h-YN7KOkFTmUCYvRh1DwL4DurcKQCUSBp3mquflqPItWVbWPagAKd&_nc_ohc=oencJsCy8xoAX8r5KQ-&_nc_zt=23&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfDxTlTzdM5uztX6pakXaG7BqBZOlhcmtA13QbV0GtH7_Q&oe=63C818B1', '2565', 1, 10);
 
 -- --------------------------------------------------------
 
@@ -81,8 +91,18 @@ CREATE TABLE `activity_status` (
   `studentID` int(7) NOT NULL,
   `status` varchar(50) NOT NULL,
   `timeEnroll` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `timeJoin` datetime NOT NULL
+  `timeJoin` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `activity_status`
+--
+
+INSERT INTO `activity_status` (`activityID`, `studentID`, `status`, `timeEnroll`, `timeJoin`) VALUES
+(1, 6300195, '0', '2023-01-15 07:17:50', NULL),
+(3, 6300195, '0', '2023-01-15 07:18:01', NULL),
+(2, 6300195, '1', '2023-01-15 07:24:20', '2023-01-20 08:30:00'),
+(2, 6300196, '1', '2023-01-15 07:24:20', '2023-01-20 09:00:00');
 
 -- --------------------------------------------------------
 
@@ -150,7 +170,20 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`id`, `fname`, `lname`, `pass`, `faculty`) VALUES
-(6300195, 'รมิดา', 'วิสุทธิ์วัฒนศักดิ์', '6300195', '14');
+(6300195, 'รมิดา', 'วิสุทธิ์วัฒนศักดิ์', '6300195', '14'),
+(6300196, 'ดุสิต', 'บริสุทธิ์', '6300196', '02'),
+(6300197, 'ธนกฤต', 'ขันธจิตต์', '6300197', '02');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_connect`
+--
+
+CREATE TABLE `student_connect` (
+  `studentID` int(7) NOT NULL,
+  `lineID` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -171,6 +204,8 @@ CREATE TABLE `teacher` (
 --
 
 INSERT INTO `teacher` (`id`, `fname`, `lname`, `pass`, `faculty`) VALUES
+(5000197, 'วัชราภรณ์', 'จิตรชุ่ม', '5000197', '17'),
+(5000198, 'สุธีราภรณ์', 'แสงจันทร์ศรี', '5000198', '17'),
 (5000199, 'อรุชา', 'พัฒนานุกูล', '5000199', '14');
 
 -- --------------------------------------------------------
@@ -232,6 +267,12 @@ ALTER TABLE `student`
   ADD KEY `faculty` (`faculty`);
 
 --
+-- Indexes for table `student_connect`
+--
+ALTER TABLE `student_connect`
+  ADD KEY `studentID` (`studentID`);
+
+--
 -- Indexes for table `teacher`
 --
 ALTER TABLE `teacher`
@@ -253,7 +294,7 @@ ALTER TABLE `verify_self`
 -- AUTO_INCREMENT for table `activity`
 --
 ALTER TABLE `activity`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `activity_self`
@@ -265,7 +306,7 @@ ALTER TABLE `activity_self`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6300196;
+  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6300198;
 
 --
 -- AUTO_INCREMENT for table `teacher`
@@ -301,6 +342,12 @@ ALTER TABLE `activity_status`
 --
 ALTER TABLE `student`
   ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`faculty`) REFERENCES `faculty` (`id`);
+
+--
+-- Constraints for table `student_connect`
+--
+ALTER TABLE `student_connect`
+  ADD CONSTRAINT `student_connect_ibfk_1` FOREIGN KEY (`studentID`) REFERENCES `student` (`id`);
 
 --
 -- Constraints for table `teacher`
