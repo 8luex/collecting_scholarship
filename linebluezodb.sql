@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 18, 2023 at 04:05 PM
+-- Generation Time: Jan 26, 2023 at 11:04 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -50,8 +50,8 @@ CREATE TABLE `activity` (
 
 INSERT INTO `activity` (`id`, `creator`, `name`, `detail`, `createdAt`, `location`, `eventDate`, `timeStart`, `timeEnd`, `hoursToReceive`, `image`, `year`, `semester`, `max`) VALUES
 (1, 5000199, 'Cyber Team Heroes', 'ฝึกอบรมอาสาสมัครเยาวชนคนรุ่นใหม่ ป้องกันภัยทางไซเบอร์ (Cyber Team Heroes) เพื่อเป็นการสร้างช่องทางการประชาสัมพันธ์ การเผยแพร่ข้อมูล ขยายเครือข่ายอาสาสมัคร ผ่านนักศึกษาซึ่งเป็นกลุ่มที่มีความรู้และทักษะในการใช้เทคโนโลยีที่ดี', '2023-01-15 07:06:51', 'ตึก 11 ห้อง 904', '2022-12-08', '08:30:00', '12:30:00', 3, 'https://www2.rsu.ac.th/Upload/images/mk/2019/GENED/Polic/Cyber%20Team%20Heroes%20(4).jpg', '2565', 1, 100),
-(2, 5000199, 'งานการแข่งขันรังสิตวิชาการ', 'ฝ่ายวิชาการและหน่อยงานที่เกี่ยวข้อง มหาวิทยาลัยรังสิต ได้จัดงานการแข่งขันรังสิตวิชาการ (รอบ Grand Champion) ประจำปีการศึกษา 2565 ซึ่งเป็นการแข่งขันเกี่ยวกับการเสนอแนวความคิดในการแก้ปัญหาของประเทศในรูปแบบสหวิทยาการของชั้นระดับมัธยมศึกษาปีที่ 4 - 6 ขึ้น', '2023-01-15 07:08:45', 'ตึก 17 ศาลาดนตรีสุริยเทพ มหาวิทยาลัยรังสิต ', '2023-01-20', '08:30:00', '12:30:00', 3, 'https://scontent.fbkk13-2.fna.fbcdn.net/v/t39.30808-6/323701965_2086641571544644_2128006122216910614_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEYn-uuZuxfGEKbOaX76NXnfuhXe0JfYPB-6Fd7Ql9g8KhhwugOwWYMaHpPJL8vjcjkcufjglsgN2oLLymeW_Jx&_nc_ohc=n9DSzUqyoZ0AX_POWEz&_nc_zt=23&_nc_ht=scontent.fbkk13-2.fna&oh=00_AfClD5-ROUanE0RCUrT9hDL7CPn2hRb1_850tkt3iCF8AA&oe=63C92359', '2565', 1, 10),
-(3, 5000197, 'RSU Counseling & Psychological Services', 'สำนักงานสวัสดิการสุขภาพ มหาวิทยาลัยรังสิต ขอเชิญนักศึกษามหาวิทยาลัยรังสิต รวมถึงท่านผู้สนใจทุกท่าน เข้าร่วมโครงการพัฒนาทักษะชีวิตในหัวข้อ \"เรื่องซึมเศร้า เข้าใจได้”', '2023-01-15 07:14:33', 'ห้อง Auditorium ชั้น 1 อาคารรัตนคุณากร (ตึก11)  มหาวิทยาลัยรังสิต', '2023-01-09', '13:00:00', '16:00:00', 3, 'https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/319730374_594018049394403_6540762201895720179_n.jpg?stp=dst-jpg_p640x640&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHHZZXKrGTA6qa1--9AB0dUofmDeyjpBU6h-YN7KOkFTmUCYvRh1DwL4DurcKQCUSBp3mquflqPItWVbWPagAKd&_nc_ohc=oencJsCy8xoAX8r5KQ-&_nc_zt=23&_nc_ht=scontent.fbkk8-4.fna&oh=00_AfDxTlTzdM5uztX6pakXaG7BqBZOlhcmtA13QbV0GtH7_Q&oe=63C818B1', '2565', 1, 10);
+(2, 5000199, 'งานการแข่งขันรังสิตวิชาการ', 'ฝ่ายวิชาการและหน่อยงานที่เกี่ยวข้อง มหาวิทยาลัยรังสิต ได้จัดงานการแข่งขันรังสิตวิชาการ (รอบ Grand Champion) ประจำปีการศึกษา 2565 ซึ่งเป็นการแข่งขันเกี่ยวกับการเสนอแนวความคิดในการแก้ปัญหาของประเทศในรูปแบบสหวิทยาการของชั้นระดับมัธยมศึกษาปีที่ 4 - 6 ขึ้น', '2023-01-26 20:39:25', 'ตึก 17 ศาลาดนตรีสุริยเทพ มหาวิทยาลัยรังสิต ', '2023-01-20', '08:30:00', '12:30:00', 3, 'https://www2.rsu.ac.th/Success/images/04112565162155_Success_Wasin-rsu.jpg', '2565', 1, 10),
+(3, 5000197, 'RSU Counseling & Psychological Services', 'สำนักงานสวัสดิการสุขภาพ มหาวิทยาลัยรังสิต ขอเชิญนักศึกษามหาวิทยาลัยรังสิต รวมถึงท่านผู้สนใจทุกท่าน เข้าร่วมโครงการพัฒนาทักษะชีวิตในหัวข้อ \"เรื่องซึมเศร้า เข้าใจได้”', '2023-01-26 20:39:40', 'ห้อง Auditorium ชั้น 1 อาคารรัตนคุณากร (ตึก11)  มหาวิทยาลัยรังสิต', '2023-01-09', '13:00:00', '16:00:00', 3, 'https://www2.rsu.ac.th/Success/images/15072562160038_Success_SarnrangsitOnline_Photo-Head_Template.jpg', '2565', 1, 10);
 
 -- --------------------------------------------------------
 
@@ -78,7 +78,7 @@ CREATE TABLE `activity_self` (
 --
 
 INSERT INTO `activity_self` (`id`, `studentID`, `createAt`, `name`, `detial`, `location`, `eventDate`, `image`, `year`, `semester`, `hoursToReceive`) VALUES
-(2, 6300195, '2023-01-14 10:20:40', 'ช่วยงานอาจารย์', 'จัดเอกสาร พิมพ์เอกสาร', 'ตึก 11 ห้อง 904', '2023-01-14 11:19:16', '', 2565, 1, 3);
+(2, 6300195, '2023-01-26 20:40:21', 'ช่วยงานอาจารย์', 'จัดเอกสาร พิมพ์เอกสาร', 'ตึก 11 ห้อง 904', '2023-01-14 11:19:16', 'https://www2.rsu.ac.th/Success/images/03112565120611_Success_erwin-2.jpg', 2565, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -181,8 +181,8 @@ INSERT INTO `student` (`id`, `fname`, `lname`, `pass`, `faculty`) VALUES
 --
 
 CREATE TABLE `student_connect` (
-  `studentID` int(7) NOT NULL,
-  `lineID` text NOT NULL
+  `lineID` varchar(255) NOT NULL,
+  `studentID` int(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -270,6 +270,7 @@ ALTER TABLE `student`
 -- Indexes for table `student_connect`
 --
 ALTER TABLE `student_connect`
+  ADD PRIMARY KEY (`lineID`),
   ADD KEY `studentID` (`studentID`);
 
 --
