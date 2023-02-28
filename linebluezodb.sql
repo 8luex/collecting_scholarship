@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 26, 2023 at 11:04 PM
+-- Generation Time: Feb 28, 2023 at 05:30 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -172,7 +172,8 @@ CREATE TABLE `student` (
 INSERT INTO `student` (`id`, `fname`, `lname`, `pass`, `faculty`) VALUES
 (6300195, 'รมิดา', 'วิสุทธิ์วัฒนศักดิ์', '6300195', '14'),
 (6300196, 'ดุสิต', 'บริสุทธิ์', '6300196', '02'),
-(6300197, 'ธนกฤต', 'ขันธจิตต์', '6300197', '02');
+(6300197, 'ธนกฤต', 'ขันธจิตต์', '6300197', '02'),
+(6304530, 'ธนทัต', 'จิวะไพบูลศักดิ์', '6304530', '14');
 
 -- --------------------------------------------------------
 
@@ -184,6 +185,14 @@ CREATE TABLE `student_connect` (
   `lineID` varchar(255) NOT NULL,
   `studentID` int(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `student_connect`
+--
+
+INSERT INTO `student_connect` (`lineID`, `studentID`) VALUES
+('U9325b70184a81caf5d81ac60128b4304', 6300196),
+('U09d1b4f1832f04d88bba0f31ddddb4fb', 6304530);
 
 -- --------------------------------------------------------
 
@@ -207,6 +216,17 @@ INSERT INTO `teacher` (`id`, `fname`, `lname`, `pass`, `faculty`) VALUES
 (5000197, 'วัชราภรณ์', 'จิตรชุ่ม', '5000197', '17'),
 (5000198, 'สุธีราภรณ์', 'แสงจันทร์ศรี', '5000198', '17'),
 (5000199, 'อรุชา', 'พัฒนานุกูล', '5000199', '14');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teacher_connect`
+--
+
+CREATE TABLE `teacher_connect` (
+  `lineID` varchar(255) NOT NULL,
+  `teacherID` int(7) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -281,6 +301,13 @@ ALTER TABLE `teacher`
   ADD KEY `faculty` (`faculty`);
 
 --
+-- Indexes for table `teacher_connect`
+--
+ALTER TABLE `teacher_connect`
+  ADD PRIMARY KEY (`lineID`),
+  ADD KEY `teacherID` (`teacherID`);
+
+--
 -- Indexes for table `verify_self`
 --
 ALTER TABLE `verify_self`
@@ -307,7 +334,7 @@ ALTER TABLE `activity_self`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6300198;
+  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6304531;
 
 --
 -- AUTO_INCREMENT for table `teacher`
@@ -355,6 +382,12 @@ ALTER TABLE `student_connect`
 --
 ALTER TABLE `teacher`
   ADD CONSTRAINT `teacher_ibfk_1` FOREIGN KEY (`faculty`) REFERENCES `faculty` (`id`);
+
+--
+-- Constraints for table `teacher_connect`
+--
+ALTER TABLE `teacher_connect`
+  ADD CONSTRAINT `teacher_connect_ibfk_1` FOREIGN KEY (`teacherID`) REFERENCES `teacher` (`id`);
 
 --
 -- Constraints for table `verify_self`
