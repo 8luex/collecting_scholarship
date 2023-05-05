@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2023 at 05:30 PM
+-- Generation Time: May 05, 2023 at 02:45 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -90,7 +90,7 @@ CREATE TABLE `activity_status` (
   `activityID` int(10) NOT NULL,
   `studentID` int(7) NOT NULL,
   `status` varchar(50) NOT NULL,
-  `timeEnroll` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `timeEnroll` datetime NOT NULL,
   `timeJoin` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -99,10 +99,10 @@ CREATE TABLE `activity_status` (
 --
 
 INSERT INTO `activity_status` (`activityID`, `studentID`, `status`, `timeEnroll`, `timeJoin`) VALUES
-(1, 6300195, '0', '2023-01-15 07:17:50', NULL),
-(3, 6300195, '0', '2023-01-15 07:18:01', NULL),
-(2, 6300195, '1', '2023-01-15 07:24:20', '2023-01-20 08:30:00'),
-(2, 6300196, '1', '2023-01-15 07:24:20', '2023-01-20 09:00:00');
+(1, 6300195, '0', '2023-01-15 14:17:50', NULL),
+(3, 6300195, '0', '2023-01-15 14:18:01', NULL),
+(2, 6300195, '1', '2023-01-15 14:24:20', '2023-01-20 08:30:00'),
+(2, 6300196, '1', '2023-01-15 14:24:20', '2023-01-20 09:00:00');
 
 -- --------------------------------------------------------
 
