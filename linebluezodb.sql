@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 05, 2023 at 02:45 PM
+-- Generation Time: May 07, 2023 at 08:51 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -103,6 +103,24 @@ INSERT INTO `activity_status` (`activityID`, `studentID`, `status`, `timeEnroll`
 (3, 6300195, '0', '2023-01-15 14:18:01', NULL),
 (2, 6300195, '1', '2023-01-15 14:24:20', '2023-01-20 08:30:00'),
 (2, 6300196, '1', '2023-01-15 14:24:20', '2023-01-20 09:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `user` varchar(50) NOT NULL,
+  `pass` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`user`, `pass`) VALUES
+('admin', '1234');
 
 -- --------------------------------------------------------
 
@@ -272,6 +290,12 @@ ALTER TABLE `activity_self`
 ALTER TABLE `activity_status`
   ADD KEY `activityID` (`activityID`,`studentID`),
   ADD KEY `studentID` (`studentID`);
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`user`);
 
 --
 -- Indexes for table `faculty`
