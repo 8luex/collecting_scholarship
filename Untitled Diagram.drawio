@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-09T18:56:45.615Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="rkElCyKOib8wrTfVqnyd" version="22.1.0" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-11-09T19:04:42.277Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="M06I5QH2gcDGEt2uRKl6" version="22.1.0" type="github" pages="7">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Connect">
     <mxGraphModel dx="1389" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -285,28 +285,25 @@
       <root>
         <mxCell id="SKG12deR_Mjv8wVnENR_-0" />
         <mxCell id="SKG12deR_Mjv8wVnENR_-1" parent="SKG12deR_Mjv8wVnENR_-0" />
-        <mxCell id="SKG12deR_Mjv8wVnENR_-2" value="API&amp;nbsp;countenroll/:activityID" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="SKG12deR_Mjv8wVnENR_-1">
-          <mxGeometry x="329" y="40" width="170" height="30" as="geometry" />
+        <mxCell id="SKG12deR_Mjv8wVnENR_-2" value="API&amp;nbsp;studenthour/:studentID" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="SKG12deR_Mjv8wVnENR_-1">
+          <mxGeometry x="324" y="40" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SKG12deR_Mjv8wVnENR_-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="SKG12deR_Mjv8wVnENR_-1" source="SKG12deR_Mjv8wVnENR_-4" target="SKG12deR_Mjv8wVnENR_-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="414" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SKG12deR_Mjv8wVnENR_-4" value="Input&amp;nbsp;activityID" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="SKG12deR_Mjv8wVnENR_-1">
-          <mxGeometry x="308" y="90" width="212" height="80" as="geometry" />
+        <mxCell id="SKG12deR_Mjv8wVnENR_-4" value="Input&amp;nbsp;studentID" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="SKG12deR_Mjv8wVnENR_-1">
+          <mxGeometry x="308" y="90" width="212" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="SKG12deR_Mjv8wVnENR_-5" value="SELECT COUNT(*) FROM activity_status&lt;br&gt;WHERE activityID = ?;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="SKG12deR_Mjv8wVnENR_-1">
-          <mxGeometry x="264" y="220" width="300" height="180" as="geometry" />
+        <mxCell id="d1PtcN3V7kRtP8WeOAad-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="SKG12deR_Mjv8wVnENR_-1" source="SKG12deR_Mjv8wVnENR_-5" target="SKG12deR_Mjv8wVnENR_-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SKG12deR_Mjv8wVnENR_-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="SKG12deR_Mjv8wVnENR_-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="414" y="400" as="sourcePoint" />
-            <mxPoint x="414" y="450" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="SKG12deR_Mjv8wVnENR_-5" value="SELECT id, fname, lname, faculty.name AS faculty,&lt;br&gt;( SELECT SUM(hoursToReceive) FROM activity&lt;br&gt;WHERE activity.id IN( SELECT activityID FROM activity_status&lt;br&gt;WHERE activity_status.studentID = student.id AND activity_status.status = 1 ) )&lt;br&gt;AS sumhours FROM student JOIN faculty ON faculty.id = student.faculty&lt;br&gt;WHERE student.id = ?;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;align=center;" vertex="1" parent="SKG12deR_Mjv8wVnENR_-1">
+          <mxGeometry x="142" y="180" width="544" height="260" as="geometry" />
         </mxCell>
         <mxCell id="SKG12deR_Mjv8wVnENR_-7" value="return json Data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="SKG12deR_Mjv8wVnENR_-1">
-          <mxGeometry x="354" y="450" width="120" height="60" as="geometry" />
+          <mxGeometry x="354" y="480" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
