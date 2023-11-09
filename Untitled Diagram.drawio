@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-09T18:27:37.185Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="i9IwN3rg3P83c-ns_YGL" version="22.1.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-11-09T18:32:43.069Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="jdemXCoBpPMg8FR4dQIC" version="22.1.0" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1389" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -62,16 +62,16 @@
       <root>
         <mxCell id="pPGvhPrSbodRZtTaoRT1-0" />
         <mxCell id="pPGvhPrSbodRZtTaoRT1-1" parent="pPGvhPrSbodRZtTaoRT1-0" />
-        <mxCell id="pPGvhPrSbodRZtTaoRT1-2" value="API Connect" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="pPGvhPrSbodRZtTaoRT1-1">
-          <mxGeometry x="369" y="40" width="90" height="30" as="geometry" />
+        <mxCell id="pPGvhPrSbodRZtTaoRT1-2" value="API&amp;nbsp;activitycreate" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="pPGvhPrSbodRZtTaoRT1-1">
+          <mxGeometry x="354" y="40" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="pPGvhPrSbodRZtTaoRT1-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="pPGvhPrSbodRZtTaoRT1-1" source="pPGvhPrSbodRZtTaoRT1-4" target="pPGvhPrSbodRZtTaoRT1-9">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="414" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pPGvhPrSbodRZtTaoRT1-4" value="Input ID, Password, LineID" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="pPGvhPrSbodRZtTaoRT1-1">
-          <mxGeometry x="326" y="100" width="176" height="60" as="geometry" />
+        <mxCell id="pPGvhPrSbodRZtTaoRT1-4" value="Input&amp;nbsp;creator,&amp;nbsp;name,&amp;nbsp;detail,&lt;br&gt;location,&amp;nbsp;eventDate,&amp;nbsp;timeStart&lt;br&gt;timeEnd,&amp;nbsp;hoursToReceive,&lt;br&gt;image,&amp;nbsp;max" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="pPGvhPrSbodRZtTaoRT1-1">
+          <mxGeometry x="308" y="90" width="212" height="80" as="geometry" />
         </mxCell>
         <mxCell id="pPGvhPrSbodRZtTaoRT1-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="pPGvhPrSbodRZtTaoRT1-1" source="pPGvhPrSbodRZtTaoRT1-9" target="pPGvhPrSbodRZtTaoRT1-10">
           <mxGeometry relative="1" as="geometry" />
@@ -89,7 +89,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pPGvhPrSbodRZtTaoRT1-9" value="SELECT id, fname, lname, pass, faculty.name AS faculty FROM teacher JOIN faculty ON faculty.id = teacher.faculty WHERE teacher.id = ? AND teacher.pass = ?;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="pPGvhPrSbodRZtTaoRT1-1">
+        <mxCell id="pPGvhPrSbodRZtTaoRT1-9" value="INSERT INTO activity (creator, name, detail, createdAt, location, eventDate, timeStart, timeEnd, hoursToReceive, image, year, semester, max)&lt;br&gt;..." style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="pPGvhPrSbodRZtTaoRT1-1">
           <mxGeometry x="264" y="220" width="300" height="180" as="geometry" />
         </mxCell>
         <mxCell id="pPGvhPrSbodRZtTaoRT1-10" value="return connect error" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="pPGvhPrSbodRZtTaoRT1-1">
