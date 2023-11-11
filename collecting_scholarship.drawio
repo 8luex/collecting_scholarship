@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-11T21:07:25.855Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="pPMtHNiwostGmIH5exk8" version="22.1.0" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-11-11T21:13:07.275Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="sXPv3NFnTRdoBgwavtq6" version="22.1.0" type="github" pages="6">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Entity Relationship Diagram">
     <mxGraphModel dx="1282" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="719" pageHeight="719" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -442,7 +442,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Copy of Entity Relationship Diagram" id="NNVpuMmgz6w5KLhKlv4s">
-    <mxGraphModel dx="672" dy="1086" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="719" pageHeight="719" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2084" dy="1857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="719" pageHeight="719" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="TmXR3nSOroDPRzoBr4Ug-0" />
         <mxCell id="TmXR3nSOroDPRzoBr4Ug-1" parent="TmXR3nSOroDPRzoBr4Ug-0" />
@@ -1480,7 +1480,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="UfC_-JB79axehsIdhDkS" name="Use Case Diagram">
-    <mxGraphModel dx="1282" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="990" pageHeight="790" math="0" shadow="0">
+    <mxGraphModel dx="1042" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="990" pageHeight="790" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1604,6 +1604,147 @@
             <mxPoint x="490" y="680" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Copy of Use Case Diagram" id="b3oYCkvf2S4WY2JdmFZ7">
+    <mxGraphModel dx="1226" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="990" pageHeight="790" math="0" shadow="0">
+      <root>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-0" />
+        <mxCell id="7t35ZepPSG49tr_fAarQ-1" parent="7t35ZepPSG49tr_fAarQ-0" />
+        <mxCell id="7t35ZepPSG49tr_fAarQ-2" value="ผู้ดูแลระบบ" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;rounded=1;strokeWidth=2;fillColor=none;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="900" y="380" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-3" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=2;size=20;indent=5;rounded=1;strokeColor=#0e8088;fillColor=#b0e3e6;sketch=0;shadow=0;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="310" y="40" width="500" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-4" value="เข้าสู่ระบบ" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="445" y="70" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-5" value="เช็คชั่วโมงทุน" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="415" y="160" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-6" value="เช็คประวัติกิจกรรม" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="415" y="250" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-7" value="ลงทะเบียนกิจกรรม" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="415" y="340" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-8" value="ยืนยันเข้ากิจกรรม" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="415" y="450" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-9" value="สร้าง/แก้ไข/ยกเลิกกิจกรรม" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="415" y="540" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-10" value="ยืนยันการเข้ากิจกรรม" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="420" y="660" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-11" value="ตรวจสอบสถานะนักศึกษาทุน" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="610" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-12" value="จัดการระบบ" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="610" y="380" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-13" value="&lt;p&gt;ดูรายชื่อ/จำนวน&lt;/p&gt;&lt;p&gt;นักศึกษาที่เข้าร่วม&lt;/p&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="610" y="580" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-14" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="220" as="sourcePoint" />
+            <mxPoint x="510" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-15" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-5">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="220" as="sourcePoint" />
+            <mxPoint x="455" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-16" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-6">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="220" as="sourcePoint" />
+            <mxPoint x="465" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-17" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-7">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="220" as="sourcePoint" />
+            <mxPoint x="475" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-18" value="ผู้ใช้ที่เป็นนักศึกษาทุนของมหาวิทยาลัยรังสิต" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;rounded=1;strokeWidth=2;fillColor=none;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="140" y="180" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-19" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=0.024;entryY=0.685;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="420" as="sourcePoint" />
+            <mxPoint x="450" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-20" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-9">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="420" as="sourcePoint" />
+            <mxPoint x="425" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-21" value="ผู้ใช้ที่เป็นอาจารย์หรือหน่วยงานที่จัดกิจกรรม" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;rounded=1;strokeWidth=2;fillColor=none;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="140" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-22" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-11">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="890" y="420" as="sourcePoint" />
+            <mxPoint x="810" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-23" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-12">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="890" y="420" as="sourcePoint" />
+            <mxPoint x="720" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-24" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-9">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="890" y="420" as="sourcePoint" />
+            <mxPoint x="720" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-25" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="7t35ZepPSG49tr_fAarQ-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="890" y="420" as="sourcePoint" />
+            <mxPoint x="720" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-26" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;labelBackgroundColor=none;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" source="7t35ZepPSG49tr_fAarQ-9" target="7t35ZepPSG49tr_fAarQ-10">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="370" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-27" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" source="7t35ZepPSG49tr_fAarQ-7" target="7t35ZepPSG49tr_fAarQ-8">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="480" y="610" as="sourcePoint" />
+            <mxPoint x="480" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7t35ZepPSG49tr_fAarQ-28" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;entryX=1.005;entryY=0.567;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;labelBackgroundColor=none;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" source="7t35ZepPSG49tr_fAarQ-13" target="7t35ZepPSG49tr_fAarQ-9">
+          <mxGeometry x="-0.1128" y="6" width="80" relative="1" as="geometry">
+            <mxPoint x="490" y="620" as="sourcePoint" />
+            <mxPoint x="490" y="680" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXnHE6_ply-Q1xC2jUkw-0" value="ศูนย์นักศึกษาทุนแห่งมหาวิทยาลัยรังสิต" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;rounded=1;strokeWidth=2;fillColor=none;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="900" y="110" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZXnHE6_ply-Q1xC2jUkw-2" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeColor=#0E8088;strokeWidth=2;fontColor=#000000;fillColor=#F694C1;" edge="1" parent="7t35ZepPSG49tr_fAarQ-1" target="ZXnHE6_ply-Q1xC2jUkw-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="890" y="150" as="sourcePoint" />
+            <mxPoint x="810" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXnHE6_ply-Q1xC2jUkw-4" value="Report&lt;br&gt;การเข้าร่วมกิจกรรม&lt;br&gt;ของนักศึกษาทุน" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;shadow=0;sketch=0;strokeColor=#0E8088;" vertex="1" parent="7t35ZepPSG49tr_fAarQ-1">
+          <mxGeometry x="610" y="110" width="140" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
